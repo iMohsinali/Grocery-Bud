@@ -13,7 +13,7 @@ const getlocal = () => {
     }
 }
 export const AppProvider = ({ children }) => {
-    const { ref, playState, getAnimation } = useWebAnimations({ ...rubberBand });
+    const { ref } = useWebAnimations({ ...rubberBand });
     const [name, setname] = useState('')
     const [list, setlist] = useState(getlocal)
     const [isEditing, setEditing] = useState(false)
@@ -29,7 +29,7 @@ export const AppProvider = ({ children }) => {
         }
         else if (name && isEditing) {
             setlist(list.map((item) => {
-                if (item.id == editId) {
+                if (item.id === editId) {
                     return { ...item, title: name }
                 }
                 return item

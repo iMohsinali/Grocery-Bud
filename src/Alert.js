@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useGlobalContext } from './Contex'
 const Alert = ({ type, mesg }) => {
-  const { remove, list } = useGlobalContext()
+  const { list, showa } = useGlobalContext()
 
   useEffect(() => {
 
     const timeout = setTimeout(() => {
-      remove()
+      showa()
     }, 3000)
     return () => clearTimeout(timeout)
   }, [list]
