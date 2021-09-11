@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaEdit, FaTrash } from 'react-icons/fa'
-const List = ({ items, remove, edit }) => {
+import { useGlobalContext } from './Contex'
+const List = ({ items }) => {
+  const { edit, remove } = useGlobalContext();
   return (<div className='grocery-lits'>
     {
       items.map((item) => {

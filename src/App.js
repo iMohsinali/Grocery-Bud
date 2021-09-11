@@ -12,7 +12,7 @@ function App() {
     name,
     setname,
     list,
-    handle, isEditing, showa, remove, edit, alert, clearlist
+    handle, isEditing, remove, edit, alert, clearlist
   } = useGlobalContext();
 
 
@@ -23,7 +23,7 @@ function App() {
     <section className='section-center'>
       <form className='grocery-form ' onSubmit={handle}>
         {
-          alert.show && <Alert {...alert} removealert={showa} list={list} />}
+          alert.show && <Alert {...alert} />}
 
         <h3 ref={ref} >Grocery bud</h3>
         <div className='form-control'>

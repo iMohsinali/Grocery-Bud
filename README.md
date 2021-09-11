@@ -1,6 +1,10 @@
 # Grocery-Bud
+<<<<<<< HEAD
  
 ## Available Scripts
+=======
+ ## Available Scripts
+>>>>>>> 3cb529197c80542b64c2dacdeff4869c02e02795
 
 In the project directory, you can run:
 
@@ -66,3 +70,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3cb529197c80542b64c2dacdeff4869c02e02795
